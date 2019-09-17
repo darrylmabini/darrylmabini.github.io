@@ -36,7 +36,7 @@ body {
 #main {
     width: 70vw;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #fafafa;
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 100px 50px 10px rgba(0, 0, 0, 0.19);
 }
