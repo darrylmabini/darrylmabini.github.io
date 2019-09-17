@@ -74,6 +74,7 @@ body {
   margin-right: 10px;
   border-radius: 40px;
   background-color: rgba(204, 204, 204, 0.7);
+  pointer-events: none;
 }
 #header .background {
   -webkit-filter: grayscale(60%) contrast(1.1);
