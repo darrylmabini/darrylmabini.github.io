@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after{
+  box-sizing:border-box;
+}
+
+html {
+  font-size: 1px;/*for using REM units*/
+}
+
+body{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 17rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #555;
+  padding: 0;
+  margin: 0;
+}
+
+a{text-decoration:none; color:inherit; cursor:pointer;}
+button{background-color:transparent; color:inherit; border-width:0; padding:0; cursor:pointer;}
+figure{margin:0;}
+input::-moz-focus-inner {border:0; padding:0; margin:0;}
+ul, ol, dd{margin:0; padding:0; list-style:none;}
+h1, h2, h3, h4, h5, h6{margin-top:0; font-weight:inherit;}
+
+cite {font-style:normal;}
+fieldset{border-width:0; padding:0; margin:0;}
+
+#main {
+    width: 70vw;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#header {
+  color: #ffffff;
+  position: relative;
+  height: 400px;
+  background-image: linear-gradient(#888, #888);
+  overflow: hidden;
+}
+#header svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}
+#header .biodata {
+  font-weight: 300;
+  letter-spacing: 2rem;
+  position: absolute;
+  top: 20%;
+  left: 40px;
+  z-index: 2;
+}
+#header .name {
+  font-size: 20rem;
+}
+#header .name h1 {
+  margin-bottom: 10px;
+}
+#header .title a {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 40px;
+  background-color: rgba(204, 204, 204, 0.7);
+}
+#header .background {
+  -webkit-filter: grayscale(100%) contrast(1);
+  filter: grayscale(100%) contrast(1.1);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#picture {
+  border-radius: 50%;
+  position: absolute;
+  left: 40px;
+  top: 300px;
+  z-index: 2;
+  width: 180px;
+  height: 180px;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 50px 30px rgba(0, 0, 0, 0.19);
+}
+#picture img {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -48%);
+}
+#content {
+  padding: 120px 40px 40px;
+}
+#repositories {
+  background-color: #fff;
+  margin: 0 40px;
+  padding: 20px;
+  font-size: 15rem;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
+}
+#repositories ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#repositories h3 {
+  margin-left: 10px;
+}
+#repositories ul li {
+  width: 50%;
+  padding: 0 10px 20px 10px;
+}
+#repositories .box {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+#repositories a {
+  font-weight: 700;
+}
+#repositories .description {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+  #main {
+    margin: 0;
+    width: 100%;
+  }
+  #repositories {
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
