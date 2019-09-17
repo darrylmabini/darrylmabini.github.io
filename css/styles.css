@@ -28,12 +28,17 @@ h1, h2, h3, h4, h5, h6{margin-top:0; font-weight:inherit;}
 cite {font-style:normal;}
 fieldset{border-width:0; padding:0; margin:0;}
 
+body {
+  background-image: linear-gradient(#000,#000), url(../images/header-bg.jpg);
+  background-size: cover;
+  background-blend-mode: saturation;
+}
 #main {
     width: 70vw;
     margin: 0 auto;
     background-color: #f2f2f2;
     position: relative;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 100px 50px 10px rgba(0, 0, 0, 0.19);
 }
 #header {
   color: #ffffff;
@@ -98,6 +103,21 @@ fieldset{border-width:0; padding:0; margin:0;}
   left: 50%;
   transform: translate(-50%, -48%);
 }
+#links {
+  position: absolute;
+  right: 60px;
+  top: 400px;
+  font-size: 18rem;
+  width: 60%;
+}
+#links ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#links i {
+  font-size: 25rem;
+}
 #content {
   padding: 120px 40px 40px;
 }
@@ -141,5 +161,11 @@ fieldset{border-width:0; padding:0; margin:0;}
     -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  #links {
+    display: none;
   }
 }
