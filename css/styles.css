@@ -118,12 +118,17 @@ body {
 }
 #links a:hover {
   text-decoration: underline;
+  color: rgb(77, 107, 145);
 }
 #links i {
   font-size: 25rem;
+  color: rgb(77, 107, 145);
 }
 #content {
   padding: 120px 40px 40px;
+}
+#content strong {
+  color: rgb(77, 107, 145);
 }
 #repositories {
   background-color: #fff;
@@ -151,6 +156,7 @@ body {
 }
 #repositories a {
   font-weight: 700;
+  color: rgb(77, 107, 145);
 }
 #repositories .description {
   margin-bottom: 10px;
