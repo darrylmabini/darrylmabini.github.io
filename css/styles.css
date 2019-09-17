@@ -29,9 +29,10 @@ cite {font-style:normal;}
 fieldset{border-width:0; padding:0; margin:0;}
 
 body {
-  background-image: linear-gradient(#000,#000), url(../images/header-bg.jpg);
+  background-color: rgba(255, 255, 255, .7);
+  background-image: url(../images/header-bg.jpg);
   background-size: cover;
-  background-blend-mode: saturation;
+  background-blend-mode: luminosity;
 }
 #main {
     width: 70vw;
@@ -75,8 +76,8 @@ body {
   background-color: rgba(204, 204, 204, 0.7);
 }
 #header .background {
-  -webkit-filter: grayscale(100%) contrast(1);
-  filter: grayscale(100%) contrast(1.1);
+  -webkit-filter: grayscale(60%) contrast(1.1);
+  filter: grayscale(60%) contrast(1.1);
   width: 100%;
   height: 100%;
   position: absolute;
